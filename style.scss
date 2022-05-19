@@ -1,0 +1,898 @@
+﻿$background-color_1: rgb(15, 239, 255);
+$background-color_h2: #05cdfe;
+$background-color_h2_reverse: #fff;
+$background-color_nav: #000;
+$background-color_btn1: #fff;
+$background-color_btn_hover: rgb(31, 177, 235);
+$background-color_btn_sejour : #04a8d1;
+$background-color_sejour_p: #0ce0f5;
+$font-family_1: 'Great Vibes', cursive;
+$font-family_body: 'lato', cursive;
+$color_1: #fff;
+$color_2: grey;
+$color_3: rgb(31, 177, 235);
+$color_h2: #000;
+$color_5: #575757;
+$color_6: red;
+$color_btn1: rgb(58, 211, 219);
+
+* {
+	padding: 0;
+	margin: 0;
+
+	body {
+		font-family: $font-family_body;
+		width: 100vw;
+
+		section {
+			padding: 30px 0 60px 0;
+		}
+
+		h2 {
+			color: $color_h2;
+			font-size: 250%;
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 30px;
+			text-transform: uppercase;
+			letter-spacing: -1px;
+			font-weight: 300;
+			word-spacing: 8px;
+
+			&:after {
+				display: block;
+				height: 2px;
+				background-color: $background-color_h2;
+				width: 100px;
+				content: " ";
+				margin: 0 auto;
+				margin-top: 10px;
+			}
+		}
+
+		/* ========== NavBar ========== */
+		header {
+			background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.3)), url(../images/header.jpg);
+			height: 100vh;
+			background-position: center;
+			background-size: cover;
+
+			nav {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				color: $color_1;
+				background-color: $background-color_nav;
+				z-index: 1;
+
+				a {
+					color: $color_1;
+					text-decoration: none;
+				}
+
+				#titleZ {
+					font-family: $font-family_1;
+					font-size: 30px;
+					margin-left: 1.3em;
+				}
+
+				ul {
+					display: flex;
+					flex-direction: row;
+
+					li {
+						list-style-type: none;
+						padding: 15px;
+					}
+				}
+			}
+
+			/* ========== Text Header ========== */
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 160px;
+
+				.textHeader {
+					position: static;
+					margin-top: 10%;
+					left: 12.3em;
+					display: flex;
+					flex-direction: column;
+
+					h1 {
+						text-transform: uppercase;
+						color: $color_1;
+
+						span {
+							font-weight: bold;
+						}
+					}
+
+					p {
+						color: $color_1;
+					}
+
+					.btnHeader {
+						padding: 10px 30px;
+
+						.button1 {
+							border: 1px solid #fff;
+							background-color: $background-color_btn1;
+							color: $color_3;
+							margin-bottom: 20px;
+							padding: 5px;
+							border-radius: 10px;
+							text-decoration: none;
+
+							&:hover {
+								background-color: $background-color_btn_hover;
+								border: 1px solid #5ee077;
+								color: $color_1;
+							}
+						}
+
+						.button2 {
+							border: 1px solid #fff;
+							color: #fff;
+							margin-bottom: 20px;
+							padding: 5px;
+							border-radius: 10px;
+							text-decoration: none;
+
+							&:hover {
+								background-color: $background-color_btn_hover;
+								border: 1px solid #5ee077;
+								color: $color_1;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* ========== Qui somme-nous ==========*/
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 0 160px;
+
+			#container_qui {
+				display: flex;
+
+				#qui_img {
+					max-width: 40%;
+				}
+
+				#qui_text_icon {
+					display: flex;
+					flex-direction: column;
+					margin-left: 15%;
+
+					.qui_txt {
+						display: flex;
+
+						.qui_icon_gauche {
+							max-width: 17%;
+							padding-right: 25px;
+							padding-left: 15px;
+							padding-top: 15px;
+
+							.qui_icon {
+								transition: all 1s;
+
+								i {
+									font-size: 34px;
+									color: red;
+								}
+
+								&:hover {
+									i {
+										color: black;
+										transform: translateX(20px);
+									}
+								}
+							}
+
+							.qui_txtQSM {
+								max-width: 83%;
+								padding-right: 15px;
+								padding-left: 15px;
+
+								p {
+									font-size: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* ========== Notre île ======== */
+		#ile {
+			background-color: $background-color_1;
+
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 160px;
+
+				.container_ile {
+					display: flex;
+					gap: 40px;
+
+					.container_txt_img {
+
+						.place {
+							background: white;
+							padding: 30px 30px;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+							img {
+								display: block;
+								margin: auto;
+								width: 90%;
+							}
+
+							h4 {
+								text-align: center;
+								margin-bottom: 15px;
+								text-transform: uppercase;
+							}
+
+							p {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* ========== Galerie Photo ========== */
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 0 160px;
+
+			.container_img {
+				display: flex;
+				flex-wrap: wrap;
+
+				.img {
+					display: flex;
+					width: 100%;
+					gap: 10px;
+
+					.img-1 {
+						width: 34%;
+
+						#img_femme {
+							background-image: url(./galerie/femmes-zanzibar.jpg);
+							border-radius: 10px;
+							background-size: cover;
+							background-position: top center;
+							height: 300px;
+							width: auto;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+						}
+
+						h4 {
+							font-size: 12px;
+							color: $color_1;
+							opacity: 0.60;
+							padding: 5px;
+						}
+
+					}
+
+					.img-2 {
+						width: 66%;
+
+						#img_plage {
+							background-image: url(./galerie/plage-zanzibar.jpg);
+							border-radius: 10px;
+							background-size: cover;
+							background-position: top center;
+							height: 300px;
+							width: auto;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+						}
+
+						h4 {
+							font-size: 12px;
+							color: $color_1;
+							opacity: 0.60;
+							padding: 5px;
+						}
+					}
+
+					.img-3 {
+						width: 41%;
+
+
+						#img_epices {
+							background-image: url(./galerie/epices-zanzibar.jpg);
+							border-radius: 10px;
+							background-size: cover;
+							background-position: top center;
+							height: 300px;
+							width: 100%;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+						}
+
+						h4 {
+							font-size: 12px;
+							color: $color_1;
+							opacity: 0.60;
+							padding: 5px;
+						}
+					}
+
+					.img-4 {
+						width: 25%;
+
+
+						#img_pecheur {
+							background-image: url(./galerie/village-pecheur-zanzibar.jpg);
+							border-radius: 10px;
+							background-size: cover;
+							background-position: top center;
+							height: 300px;
+							width: auto;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+						}
+
+						h4 {
+							font-size: 12px;
+							color: $color_1;
+							opacity: 0.60;
+							padding: 5px;
+						}
+					}
+
+					.img-5 {
+						width: 34%;
+
+
+						#img_safari {
+							background-image: url(./galerie/safari-blue.jpg);
+							border-radius: 10px;
+							background-size: cover;
+							background-position: top center;
+							height: 300px;
+							width: 100%;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+						}
+
+						h4 {
+							font-size: 12px;
+							color: $color_1;
+							opacity: 0.60;
+							padding: 5px;
+						}
+					}
+				}
+			}
+		}
+
+		/* ========== Ils ont adoré ==========*/
+		.avis_clients {
+			background-image: linear-gradient(rgba(0, 242, 96, 0.4), rgba(7, 117, 230, 0.3)),
+				url(./images/the-paysage.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			height: 500px;
+
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				h2 {
+					color: $color_1;
+
+					&:after {
+						background-color: $background-color_h2_reverse;
+					}
+				}
+
+				#container_avis {
+					display: flex;
+
+					.container_comment {
+						width: auto;
+						height: auto;
+
+						p {
+							color: $color_1;
+							font-style: italic;
+							opacity: 0.80;
+
+							i {
+								font-size: 30px;
+								opacity: 0.80;
+							}
+						}
+
+						img {
+							height: 50px;
+							border-radius: 50%;
+							margin-right: 10px;
+							margin-bottom: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		/* ========== Nos séjour ============ */
+		#sejour {
+			margin-bottom: 20px;
+
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 160px;
+
+				.sejours {
+					display: flex;
+					gap: 40px;
+
+					.temoignages_clients {
+						display: flex;
+						gap: 20px;
+
+						/* Séjour 1*/
+						#sejour_1 {
+							background: white;
+							padding: 30px 30px;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+							.sejour-title {
+
+								h3 {
+									color: $color_h2;
+									font-size: 30px;
+								}
+
+								p {
+									font-size: 12px;
+									font-weight: 300;
+									line-height: 20px;
+								}
+							}
+
+							.sejour_content {
+								ul {
+									list-style: none;
+									padding: 20px;
+									font-weight: 300;
+									line-height: 35px;
+
+									li {
+										i {
+											font-size: 90%;
+											margin-right: 10px;
+										}
+									}
+								}
+							}
+
+							.sejour-signup {
+								text-align: center;
+
+								.button {
+									background-color: $background-color_btn_sejour;
+									color: $color_1;
+									margin-bottom: 20px;
+									padding: 5px;
+									border-radius: 8px;
+									text-decoration: none;
+
+									&:hover {
+										background-color: $background-color_btn_hover;
+										color: $color_1;
+									}
+								}
+							}
+						}
+
+
+						/* Séjour 2 */
+						#sejour_premium {
+							background: white;
+							padding: 30px 30px;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+							background-color: $background-color_sejour_p;
+							color: $color_1;
+
+							.sejour_title {
+
+								h3 {
+									color: $color_h2;
+									font-size: 30px;
+
+									span {
+										color: $color_1
+									}
+								}
+
+								p {
+									font-size: 12px;
+									font-weight: 300;
+									line-height: 20px;
+								}
+							}
+
+							.sejour_content {
+
+								ul {
+									list-style: none;
+									padding: 20px;
+									font-weight: 300;
+									line-height: 35px;
+
+									li {
+										i {
+											font-size: 90%;
+											margin-right: 10px;
+										}
+									}
+								}
+							}
+
+							.sejour-signup {
+								text-align: center;
+
+								.button {
+									background-color: $background-color_btn_sejour;
+									color: $color_1;
+									margin-bottom: 20px;
+									padding: 5px;
+									border-radius: 8px;
+									text-decoration: none;
+
+									&:hover {
+										background-color: $background-color_btn_hover;
+										color: $color_1;
+									}
+								}
+							}
+						}
+
+						/* Séjour 3*/
+						.sejour_3 {
+							background: white;
+							padding: 30px 30px;
+							border-radius: 10px;
+							margin-bottom: 20px;
+							box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+							.sejour_title {
+
+								h3 {
+									color: $color_h2;
+									font-size: 30px;
+								}
+
+								p {
+									font-size: 12px;
+									font-weight: 300;
+									line-height: 20px;
+								}
+							}
+
+							.sejour_content {
+
+								ul {
+									list-style: none;
+									padding: 20px;
+									font-weight: 300;
+									line-height: 35px;
+
+									li {
+										i {
+											font-size: 90%;
+											margin-right: 10px;
+										}
+									}
+								}
+							}
+
+							.sejour-signup {
+								text-align: center;
+
+								.button {
+									background-color: $background-color_btn_sejour;
+									color: $color_1;
+									margin-bottom: 20px;
+									padding: 5px;
+									border-radius: 8px;
+									text-decoration: none;
+
+									&:hover {
+										background-color: $background-color_btn_hover;
+										color: $color_1;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* ========== Contact ========== */
+		#contact {
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				.contact_infos {
+					display: flex;
+					justify-content: flex-start;
+					gap: 10px;
+
+					.contact_largeur {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: center;
+						width: 60%;
+
+						p {
+							font-size: 12px;
+							font-weight: 300;
+							line-height: 20px;
+						}
+
+						.champs {
+							display: flex;
+							flex-wrap: wrap;
+							margin-bottom: 10px;
+
+							.phone {
+								p {
+									font-size: 12px;
+									font-weight: 300;
+									line-height: 20px;
+								}
+							}
+
+							.adress {
+								margin-left: 90px;
+
+								p {
+									font-size: 12px;
+									font-weight: 300;
+									line-height: 20px;
+								}
+							}
+
+						}
+
+						form {
+							.champs {
+								display: flex;
+								flex-wrap: wrap;
+								margin-bottom: 10px;
+
+								.contact_form1 {
+									display: flex;
+									padding-left: 15px;
+									margin-bottom: 30px;
+								}
+
+								.contact_form2 {
+									padding-left: 15px;
+									margin-bottom: 30px;
+								}
+
+								.contact_form3 {
+									width: 100%;
+									padding: 0 15px;
+									display: flex;
+									flex-direction: column;
+
+									#message {
+										font-size: 10px;
+									}
+								}
+
+								.button {
+									background-color: $background-color_btn_sejour;
+									color: $color_1;
+									margin-bottom: 20px;
+									padding: 5px;
+									border-radius: 8px;
+									text-decoration: none;
+								}
+							}
+						}
+					}
+
+					.carte {
+						width: 50%;
+
+						iframe {
+							width: 100%;
+							height: 500px;
+						}
+					}
+				}
+			}
+		}
+
+		/* ========== Footer ========== */
+		footer {
+			background-color: $background-color_btn_hover;
+			height: 60px;
+			padding: 20px 20px;
+			display: flex;
+			justify-content: center;
+
+			p {
+				color: $color_1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	body {
+		.navB {
+
+			#titleZ {
+				display: flex;
+				justify-content: flex-start;
+			}
+
+			ul {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		#qui_img {
+			opacity: 0.33;
+		}
+
+		.container {
+			.container_img {
+				.img {
+					display: flex;
+					flex-direction: column;
+
+					.img-1 {
+						width: auto;
+					}
+
+					.img-2 {
+						width: auto;
+					}
+
+					.img-3 {
+						width: auto;
+					}
+
+					.img-4 {
+						width: auto;
+					}
+
+					.img-5 {
+						width: auto;
+					}
+				}
+			}
+		}
+
+		.avis_clients {
+			height: 800px;
+
+			#container_avis {
+				display: flex;
+				flex-direction: column;
+
+				.container_comment {
+					width: 50%;
+					height: 100px;
+				}
+			}
+		}
+
+
+		iframe {
+			width: 90vw;
+		}
+
+	}
+}
+
+/* 1024px : avis en colonne  */
+@media screen and (max-width: 1024px) {
+
+	body {
+		#qui_img {
+			position: absolute;
+			max-width: 100%;
+			opacity: 50%;
+			z-index: -1;
+		}
+
+		.container_ile {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.avis_clients {
+			height: 800px;
+
+			#container_avis {
+				display: flex;
+				flex-direction: column;
+
+				.container_comment {
+					width: 50%;
+					height: 100px;
+				}
+			}
+		}
+	}
+
+	.temoignages_clients {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+
+	.navB {
+		position: fixed;
+		top: 0;
+	}
+
+	#qui_img {
+		opacity: 50%;
+	}
+
+	.contact_infos {
+		display: flex;
+		flex-direction: column;
+
+		.contact_largeur {
+			display: flex;
+			flex-direction: column;
+
+			.champs {
+				display: flex;
+				flex-wrap: wrap;
+
+				.contact_form1 {
+					padding-left: 0px;
+					margin-bottom: 30px;
+				}
+
+				.contact_form3 {
+					width: 100%;
+					padding: 0px;
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}

@@ -215,18 +215,16 @@
   padding-top: 15px;
 }
 
-* body .container #container_qui #qui_text_icon .qui_txt .qui_icon_gauche .qui_icon {
+* body .container #container_qui #qui_text_icon .qui_txt .qui_icon_gauche .qui_icon svg {
+  height: 30px;
+  width: 30px;
+  fill: red;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-* body .container #container_qui #qui_text_icon .qui_txt .qui_icon_gauche .qui_icon i {
-  font-size: 34px;
-  color: red;
-}
-
-* body .container #container_qui #qui_text_icon .qui_txt .qui_icon_gauche .qui_icon:hover i {
-  color: black;
+* body .container #container_qui #qui_text_icon .qui_txt .qui_icon_gauche .qui_icon svg:hover {
+  fill: black;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
@@ -477,9 +475,15 @@
   opacity: 0.80;
 }
 
-* body .avis_clients .container #container_avis .container_comment p i {
-  font-size: 30px;
+* body .avis_clients .container #container_avis .container_comment p svg {
+  height: 20px;
+  width: 20px;
+  fill: #fff;
   opacity: 0.80;
+}
+
+* body .avis_clients .container #container_avis .container_comment span {
+  color: #fff;
 }
 
 * body .avis_clients .container #container_avis .container_comment img {
@@ -551,8 +555,10 @@
   line-height: 35px;
 }
 
-* body #sejour .container .sejours .temoignages_clients #sejour_1 .sejour_content ul li i {
-  font-size: 90%;
+* body #sejour .container .sejours .temoignages_clients #sejour_1 .sejour_content ul li svg {
+  fill: black;
+  height: 10px;
+  width: 10px;
   margin-right: 10px;
 }
 
@@ -607,8 +613,10 @@
   line-height: 35px;
 }
 
-* body #sejour .container .sejours .temoignages_clients #sejour_premium .sejour_content ul li i {
-  font-size: 90%;
+* body #sejour .container .sejours .temoignages_clients #sejour_premium .sejour_content ul li svg {
+  fill: white;
+  height: 10px;
+  width: 10px;
   margin-right: 10px;
 }
 
@@ -657,8 +665,10 @@
   line-height: 35px;
 }
 
-* body #sejour .container .sejours .temoignages_clients .sejour_3 .sejour_content ul li i {
-  font-size: 90%;
+* body #sejour .container .sejours .temoignages_clients .sejour_3 .sejour_content ul li svg {
+  fill: black;
+  height: 10px;
+  width: 10px;
   margin-right: 10px;
 }
 
@@ -736,6 +746,12 @@
   line-height: 20px;
 }
 
+* body #contact .container .contact_infos .contact_largeur .champs .phone p svg {
+  fill: black;
+  height: 15px;
+  width: 15px;
+}
+
 * body #contact .container .contact_infos .contact_largeur .champs .adress {
   margin-left: 90px;
 }
@@ -744,6 +760,12 @@
   font-size: 12px;
   font-weight: 300;
   line-height: 20px;
+}
+
+* body #contact .container .contact_infos .contact_largeur .champs .adress p svg {
+  fill: black;
+  height: 15px;
+  width: 15px;
 }
 
 * body #contact .container .contact_infos .contact_largeur form .champs {
@@ -755,7 +777,7 @@
   margin-bottom: 10px;
 }
 
-* body #contact .container .contact_infos .contact_largeur form .champs .contact_form1 {
+* body #contact .container .contact_infos .contact_largeur form .champs .contact_formNom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,12 +785,12 @@
   margin-bottom: 30px;
 }
 
-* body #contact .container .contact_infos .contact_largeur form .champs .contact_form2 {
+* body #contact .container .contact_infos .contact_largeur form .champs .contact_formMail {
   padding-left: 15px;
   margin-bottom: 30px;
 }
 
-* body #contact .container .contact_infos .contact_largeur form .champs .contact_form3 {
+* body #contact .container .contact_infos .contact_largeur form .champs .contact_formTxt {
   width: 100%;
   padding: 0 15px;
   display: -webkit-box;
@@ -780,7 +802,7 @@
           flex-direction: column;
 }
 
-* body #contact .container .contact_infos .contact_largeur form .champs .contact_form3 #message {
+* body #contact .container .contact_infos .contact_largeur form .champs .contact_formTxt #message {
   font-size: 10px;
 }
 
@@ -788,6 +810,7 @@
   background-color: #04a8d1;
   color: #fff;
   margin-bottom: 20px;
+  margin-top: 20px;
   padding: 5px;
   border-radius: 8px;
   text-decoration: none;

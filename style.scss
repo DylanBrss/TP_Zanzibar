@@ -181,16 +181,16 @@ $color_btn1: rgb(58, 211, 219);
 							padding-top: 15px;
 
 							.qui_icon {
-								transition: all 1s;
 
-								i {
-									font-size: 34px;
-									color: red;
-								}
 
-								&:hover {
-									i {
-										color: black;
+								svg {
+									height: 30px;
+									width: 30px;
+									fill : red;
+									transition: all 1s;
+
+									&:hover {
+										fill: black;
 										transform: translateX(20px);
 									}
 								}
@@ -416,10 +416,16 @@ $color_btn1: rgb(58, 211, 219);
 							font-style: italic;
 							opacity: 0.80;
 
-							i {
-								font-size: 30px;
+							svg {
+								height: 20px;
+								width: 20px;
+								fill: #fff;
 								opacity: 0.80;
 							}
+						}
+
+						span {
+							color: #fff;
 						}
 
 						img {
@@ -474,6 +480,7 @@ $color_btn1: rgb(58, 211, 219);
 							}
 
 							.sejour_content {
+
 								ul {
 									list-style: none;
 									padding: 20px;
@@ -481,8 +488,10 @@ $color_btn1: rgb(58, 211, 219);
 									line-height: 35px;
 
 									li {
-										i {
-											font-size: 90%;
+										svg {
+											fill :black;
+											height: 10px;
+											width: 10px;
 											margin-right: 10px;
 										}
 									}
@@ -546,8 +555,10 @@ $color_btn1: rgb(58, 211, 219);
 									line-height: 35px;
 
 									li {
-										i {
-											font-size: 90%;
+										svg {
+											fill :white;
+											height: 10px;
+											width: 10px;
 											margin-right: 10px;
 										}
 									}
@@ -604,8 +615,10 @@ $color_btn1: rgb(58, 211, 219);
 									line-height: 35px;
 
 									li {
-										i {
-											font-size: 90%;
+										svg {
+											fill :black;
+											height: 10px;
+											width: 10px;
 											margin-right: 10px;
 										}
 									}
@@ -669,6 +682,12 @@ $color_btn1: rgb(58, 211, 219);
 									font-size: 12px;
 									font-weight: 300;
 									line-height: 20px;
+
+									svg{
+										fill: black;
+										height: 15px;
+										width: 15px;
+									}
 								}
 							}
 
@@ -679,6 +698,12 @@ $color_btn1: rgb(58, 211, 219);
 									font-size: 12px;
 									font-weight: 300;
 									line-height: 20px;
+
+									svg{
+										fill: black;
+										height: 15px;
+										width: 15px;
+									}
 								}
 							}
 
@@ -690,18 +715,18 @@ $color_btn1: rgb(58, 211, 219);
 								flex-wrap: wrap;
 								margin-bottom: 10px;
 
-								.contact_form1 {
+								.contact_formNom {
 									display: flex;
 									padding-left: 15px;
 									margin-bottom: 30px;
 								}
 
-								.contact_form2 {
+								.contact_formMail {
 									padding-left: 15px;
 									margin-bottom: 30px;
 								}
 
-								.contact_form3 {
+								.contact_formTxt {
 									width: 100%;
 									padding: 0 15px;
 									display: flex;
@@ -716,9 +741,11 @@ $color_btn1: rgb(58, 211, 219);
 									background-color: $background-color_btn_sejour;
 									color: $color_1;
 									margin-bottom: 20px;
+									margin-top: 20px;
 									padding: 5px;
 									border-radius: 8px;
 									text-decoration: none;
+									
 								}
 							}
 						}
